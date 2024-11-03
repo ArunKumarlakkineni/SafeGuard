@@ -1,0 +1,201 @@
+Phrase,Category,Label
+Help me!,Distress,1
+Please call the police!,Distress,1
+I'm in danger!,Distress,1
+I don't feel safe!,Distress,1
+Someone is following me!,Distress,1
+I need help!,Distress,1
+He won't leave me alone!,Distress,1
+He's threatening me!,Distress,1
+I need to get away from here!,Distress,1
+I'm scared!,Distress,1
+I think he's going to hurt me!,Distress,1
+Stay away from me!,Distress,1
+Can you stay with me?,Distress,1
+I feel trapped!,Distress,1
+I need to hide!,Distress,1
+Can you call the police for me?,Distress,1
+He's trying to hurt me!,Distress,1
+I'm being followed!,Distress,1
+Please don't leave me alone!,Distress,1
+He's not letting me go!,Distress,1
+I'm in a bad situation!,Distress,1
+Can you walk me home?,Distress,1
+"Please help, I'm scared!",Distress,1
+I'm trying to escape!,Distress,1
+I think he's dangerous!,Distress,1
+He's stalking me!,Distress,1
+I'm being harassed!,Distress,1
+I don't know this person!,Distress,1
+He's grabbing me!,Distress,1
+I need to get away from him!,Distress,1
+"I'm trying to run, but I can't!",Distress,1
+He's blocking my path!,Distress,1
+He's following me in his car!,Distress,1
+Please stop following me!,Distress,1
+I'm not safe!,Distress,1
+I feel threatened!,Distress,1
+He's forcing me to go with him!,Distress,1
+I don't know what to do!,Distress,1
+He's trying to take me!,Distress,1
+I'm in an abusive relationship!,Distress,1
+"I can't breathe, help!",Distress,1
+He won't let me go!,Distress,1
+I'm being restrained!,Distress,1
+"Please, he's going to hurt me!",Distress,1
+Can you get help?,Distress,1
+I'm being held against my will!,Distress,1
+I'm in a violent situation!,Distress,1
+He's making me do things I don't want to!,Distress,1
+I'm trapped in here!,Distress,1
+"He's watching me, I can't move!",Distress,1
+"I'm being followed, help!",Distress,1
+Please don’t touch me!,Distress,1
+I need to get out of here!,Distress,1
+I think he's trying to kidnap me!,Distress,1
+He is not leaving me alone!,Distress,1
+I don't know this man!,Distress,1
+He's making me uncomfortable!,Distress,1
+I'm scared for my safety!,Distress,1
+I think he's watching me!,Distress,1
+He's blocking my way!,Distress,1
+I need to find a safe place!,Distress,1
+I don't feel okay around him!,Distress,1
+He's been following me for a while!,Distress,1
+Please call someone for help!,Distress,1
+I can't get away from him!,Distress,1
+I'm not safe right now!,Distress,1
+He's being aggressive!,Distress,1
+I need to get out quickly!,Distress,1
+He's making threats!,Distress,1
+He's waiting outside!,Distress,1
+He won't let me leave!,Distress,1
+He is trying to force me into his car!,Distress,1
+I think he's dangerous!,Distress,1
+"Can you help me, I am scared?",Distress,1
+He is yelling at me!,Distress,1
+He is chasing me!,Distress,1
+I need to escape!,Distress,1
+I feel cornered!,Distress,1
+He is been following me for hours!,Distress,1
+He won't stop harassing me!,Distress,1
+I don't feel comfortable with him around!,Distress,1
+Please don't leave me alone with him!,Distress,1
+I need to stay somewhere safe!,Distress,1
+I am being harassed in public!,Distress,1
+"He is trying to hurt me, please help!",Distress,1
+I think he is armed!,Distress,1
+He keeps getting closer to me!,Distress,1
+I feel like he is stalking me!,Distress,1
+I am trapped in his car!,Distress,1
+He is waiting for me outside!,Distress,1
+He is cornering me!,Distress,1
+I think he is following me home!,Distress,1
+I need to get out of this situation!,Distress,1
+He is threatening me with violence!,Distress,1
+I am too scared to move!,Distress,1
+"Please, he won't leave me alone!",Distress,1
+He is not letting me go!,Distress,1
+He is making me feel unsafe!,Distress,1
+I feel like I am being watched!,Distress,1
+"I am locked in, I cannot get out!",Distress,1
+How are you today?,Non-Distress,0
+I'm going to the store.,Non-Distress,0
+Can you pass me the salt?,Non-Distress,0
+I love this song!,Non-Distress,0
+What time is the meeting?,Non-Distress,0
+I'll see you tomorrow.,Non-Distress,0
+The weather is nice today.,Non-Distress,0
+Can you help me with this project?,Non-Distress,0
+I am feeling great!,Non-Distress,0
+Do you want to grab coffee?,Non-Distress,0
+I had a wonderful weekend!,Non-Distress,0
+I'll text you later.,Non-Distress,0
+I am going to the gym after work.,Non-Distress,0
+Can you tell me more about that?,Non-Distress,0
+What is for dinner tonight?,Non-Distress,0
+I am reading a good book.,Non-Distress,0
+I am working from home today.,Non-Distress,0
+I am meeting a friend for lunch.,Non-Distress,0
+I'll be there in 10 minutes.,Non-Distress,0
+This is my favorite movie!,Non-Distress,0
+What time does the store close?,Non-Distress,0
+I am taking a vacation next week.,Non-Distress,0
+I am feeling a bit tired today.,Non-Distress,0
+Let's plan a weekend trip!,Non-Distress,0
+I am going to call my mom later.,Non-Distress,0
+Do you need help with that?,Non-Distress,0
+I've been really busy lately.,Non-Distress,0
+The food smells amazing!,Non-Distress,0
+I am almost finished with the report.,Non-Distress,0
+I'll meet you at the restaurant.,Non-Distress,0
+I am looking forward to the event!,Non-Distress,0
+I enjoy listening to podcasts.,Non-Distress,0
+Let's catch up soon!,Non-Distress,0
+I am learning a new hobby.,Non-Distress,0
+I think this looks good on you.,Non-Distress,0
+I am going to the beach this weekend.,Non-Distress,0
+That's a great idea!,Non-Distress,0
+I appreciate your help.,Non-Distress,0
+I am studying for my exams.,Non-Distress,0
+Do you have any plans for the weekend?,Non-Distress,0
+I just finished a great workout.,Non-Distress,0
+I am excited for the new season!,Non-Distress,0
+What did you think of the movie?,Non-Distress,0
+Let's go for a walk!,Non-Distress,0
+I am working on a new project.,Non-Distress,0
+I just bought some new clothes.,Non-Distress,0
+Can you send me that document?,Non-Distress,0
+I'll be in a meeting later today.,Non-Distress,0
+I am learning how to cook new recipes.,Non-Distress,0
+I had a relaxing day today.,Non-Distress,0
+I am going to watch a movie tonight.,Non-Distress,0
+Whats your favorite restaurant?,Non-Distress,0
+I'll pick you up at 6 PM.,Non-Distress,0
+I am thinking of redecorating my room.,Non-Distress,0
+Do you want to go to the park?,Non-Distress,0
+I am enjoying my time off work.,Non-Distress,0
+This coffee is really good!,Non-Distress,0
+I am planning a trip with my family.,Non-Distress,0
+I am trying to learn a new language.,Non-Distress,0
+I love spending time outdoors.,Non-Distress,0
+I am working on a presentation.,Non-Distress,0
+What is your favorite hobby?,Non-Distress,0
+I am going to bake some cookies.,Non-Distress,0
+I am thinking of getting a new phone.,Non-Distress,0
+I am meeting up with friends later.,Non-Distress,0
+This restaurant has great food!,Non-Distress,0
+"I am doing well, thanks for asking.",Non-Distress,0
+I am trying out a new recipe.,Non-Distress,0
+I am feeling very productive today.,Non-Distress,0
+What are you watching on TV?,Non-Distress,0
+I'll  send you an email tomorrow.,Non-Distress,0
+I am thinking about starting a blog.,Non-Distress,0
+I am looking forward to the weekend.,Non-Distress,0
+I love your outfit!,Non-Distress,0
+I am catching up on some work.,Non-Distress,0
+I am planning a road trip!,Non-Distress,0
+I am going to the library.,Non-Distress,0
+Let's have dinner together soon!,Non-Distress,0
+I am organizing my schedule for the week.,Non-Distress,0
+Do you need help with anything?,Non-Distress,0
+I just bought some groceries.,Non-Distress,0
+I am attending an online class today.,Non-Distress,0
+I am making plans for the holidays.,Non-Distress,0
+I am enjoying a quiet evening at home.,Non-Distress,0
+I am working on a side project.,Non-Distress,0
+What is your favorite book?,Non-Distress,0
+I am trying out a new workout routine.,Non-Distress,0
+I am going to take a walk in the park.,Non-Distress,0
+This weekend has been really relaxing.,Non-Distress,0
+I am having a great day!,Non-Distress,0
+I am planning to start a garden.,Non-Distress,0
+I am going to join a new club.,Non-Distress,0
+I am catching up on my reading.,Non-Distress,0
+I am going to clean the house today.,Non-Distress,0
+I am excited to see you soon!,Non-Distress,0
+I love this place!,Non-Distress,0
+I am planning to watch a movie tonight.,Non-Distress,0
+I am making plans for the summer.,Non-Distress,0
+I am catching up on some sleep.,Non-Distress,0
+I am thinking about painting my room.,Non-Distress,0
