@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="start"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:background="@drawable/bubble_background"
+        android:padding="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:maxWidth="280dp"
+        android:layout_gravity="start"
+        android:textColor="#4E342E"
+        />
+</LinearLayout>

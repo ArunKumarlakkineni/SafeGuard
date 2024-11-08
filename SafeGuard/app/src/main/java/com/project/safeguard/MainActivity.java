@@ -21,6 +21,7 @@ import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -29,6 +30,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationRequest;
@@ -37,10 +41,12 @@ import com.google.android.gms.tasks.CancellationToken;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.OnTokenCanceledListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.project.safeguard.Contacts.ContactModel;
 import com.project.safeguard.Contacts.CustomAdapter;
 import com.project.safeguard.Contacts.DbHelper;
 import com.project.safeguard.ShakeService.SensorService;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,10 +58,15 @@ public class MainActivity extends AppCompatActivity {
     List<ContactModel> list;
     CustomAdapter customAdapter;
     private static final int REQUEST_CODE = 1;
+    
     private static final int PICK_CONTACT = 1;
     private static final int IGNORE_BATTERY_OPTIMIZATION_REQUEST = 1002;
     private SpeechRecognizer speechRecognizer;
+    private FloatingActionButton chatButton;
     Intent intent;
+    private boolean isFragmentDisplayed = false;
+    private View grayOverlay;
+    private FrameLayout fragmentContainer;
     private boolean isMyServiceRunning(Class<?> serviceClass) {
         ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
         for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
@@ -114,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,6 +139,18 @@ public class MainActivity extends AppCompatActivity {
         list = db.getAllContacts();
         customAdapter = new CustomAdapter(this, list);
         listView.setAdapter(customAdapter);
+        grayOverlay = findViewById(R.id.gray_overlay);
+        fragmentContainer = findViewById(R.id.fragment_container);
+        FloatingActionButton fabChat = findViewById(R.id.fab_chat);
+        fabChat.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                if (isFragmentDisplayed) {
+                    closeFragment();
+                } else {
+                    displayFragment();
+                }
+            }
+        });
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -166,8 +191,8 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<String> matches = results.getStringArrayList(speechRecognizer.RESULTS_RECOGNITION);
                 if (matches != null){
                     String string = matches.get(0);
-
-                    if (string.equals("save me")||string.equals("help me")||string.equals("kapadandi")){
+                    Log.d("ChatFragment", "onResults: "+string);
+                    if (string.equalsIgnoreCase("save me")||string.equals("help me")|| string.equalsIgnoreCase("kapadandi")|| string.equalsIgnoreCase("bachana")){
                         trigger();
                     }
                 }
@@ -180,20 +205,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    public void displayFragment() {
+        ChatFragment chatFragment = new ChatFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
+        fragmentTransaction.add(R.id.fragment_container, chatFragment).addToBackStack(null).commit();
+        grayOverlay.setVisibility(View.VISIBLE); fragmentContainer.setVisibility(View.VISIBLE);
+        isFragmentDisplayed = true;
+    } public void closeFragment() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Fragment chatFragment = fragmentManager.findFragmentById(R.id.fragment_container);
+        if (chatFragment != null) {
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
+            fragmentTransaction.remove(chatFragment).commit();
+        }
+        grayOverlay.setVisibility(View.GONE);
+        fragmentContainer.setVisibility(View.GONE);
+        isFragmentDisplayed = false;
+    }
     @SuppressLint("MissingPermission")
     private void trigger(){
         FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(getApplicationContext());
-
-        // use the PRIORITY_BALANCED_POWER_ACCURACY
-        // so that the service doesn't use unnecessary power via GPS
-        // it will only use GPS at this very momen
         fusedLocationClient.getCurrentLocation(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY, new CancellationToken() {
             @Override
             public boolean isCancellationRequested() {
                 return false;
             }
-
             @NonNull
             @Override
             public CancellationToken onCanceledRequested(@NonNull OnTokenCanceledListener onTokenCanceledListener) {

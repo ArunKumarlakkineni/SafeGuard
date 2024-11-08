@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+            <solid android:color="#33000000" /> <!-- Semi-transparent shadow -->
+        </shape>
+    </item>
+
+    <!-- Bubble layer -->
+    <item android:left="2dp" android:top="2dp"> <!-- Offset to create shadow effect -->
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+            <gradient
+                android:startColor="#f8bbd0"
+                android:endColor="#f48fb1"
+                android:angle="45" />
+        </shape>
+    </item>
+</layer-list>
