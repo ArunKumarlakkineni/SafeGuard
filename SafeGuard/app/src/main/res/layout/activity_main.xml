@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#F5F5F5">
+    android:background="#FFF0F5">
 
     <!-- Main content layout with Button and ListView -->
     <LinearLayout
@@ -25,13 +25,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:backgroundTint="#6A1B9A"
-        android:text="@string/add_emergency_contact"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:elevation="4dp"
-        android:drawableLeft="@drawable/ic_add_contact"
-        android:drawablePadding="8dp" />
+            android:backgroundTint="#E91E63"
+            android:text="@string/add_emergency_contact"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            android:drawableLeft="@drawable/ic_add_contact"
+            android:drawablePadding="8dp" />
 
         <!-- Emergency Contacts List -->
         <ListView
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:divider="#BDBDBD"
+            android:divider="#F8BBD0"
             android:dividerHeight="1dp"
             android:background="#FFFFFF"
             android:padding="8dp"
@@ -94,10 +94,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:tint="#FFFFFF"
-            android:backgroundTint="#00796B"
-        android:contentDescription="Chat"
-        app:srcCompat="@drawable/ic_chat"
-        android:elevation="8dp" />
+            android:backgroundTint="#F06292"
+            android:contentDescription="Chat"
+            app:srcCompat="@drawable/ic_chat"
+            android:elevation="8dp" />
 
         <!-- Mic Floating Action Button -->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -106,11 +106,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:tint="#FFFFFF"
-            android:backgroundTint="#D32F2F"
-        android:contentDescription="Mic"
-        app:srcCompat="@drawable/voicewave"
-        android:elevation="8dp"
-        android:onClick="startButton" />
+            android:backgroundTint="#F48FB1"
+            android:contentDescription="Mic"
+            app:srcCompat="@drawable/voicewave"
+            android:elevation="8dp"
+            android:onClick="startButton" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

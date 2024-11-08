@@ -40,6 +40,7 @@ public class ChatViewModel extends AndroidViewModel {
     private String jsonResponse;
     public ChatViewModel(@NonNull Application application) {
         super(application);
+        addMessage(new ChatMessage("Hii iam your personal AI chatbot personalised for women health and safety",false ));
     }
 
     public LiveData<List<ChatMessage>> getChatMessages() {
